@@ -15,6 +15,8 @@
 		BA8EF64B1B65CD090093297D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8EF64A1B65CD090093297D /* Images.xcassets */; };
 		BA8EF64E1B65CD090093297D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8EF64C1B65CD090093297D /* LaunchScreen.xib */; };
 		BA8EF65A1B65CD090093297D /* HudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8EF6591B65CD090093297D /* HudDemoTests.m */; };
+		BA8EF6661B65CD6C0093297D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8EF6651B65CD6C0093297D /* MBProgressHUD.m */; };
+		BA8EF6691B65CE410093297D /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8EF6681B65CE410093297D /* HUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		BA8EF6531B65CD090093297D /* HudDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HudDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8EF6581B65CD090093297D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8EF6591B65CD090093297D /* HudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HudDemoTests.m; sourceTree = "<group>"; };
+		BA8EF6641B65CD6C0093297D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BA8EF6651B65CD6C0093297D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BA8EF6671B65CE410093297D /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		BA8EF6681B65CE410093297D /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		BA8EF6391B65CD090093297D /* HudDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA8EF6631B65CD5B0093297D /* MBProgressHUD */,
 				BA8EF63E1B65CD090093297D /* AppDelegate.h */,
 				BA8EF63F1B65CD090093297D /* AppDelegate.m */,
 				BA8EF6411B65CD090093297D /* MasterViewController.h */,
@@ -122,6 +129,17 @@
 				BA8EF6581B65CD090093297D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA8EF6631B65CD5B0093297D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EF6641B65CD6C0093297D /* MBProgressHUD.h */,
+				BA8EF6651B65CD6C0093297D /* MBProgressHUD.m */,
+				BA8EF6671B65CE410093297D /* HUD.h */,
+				BA8EF6681B65CE410093297D /* HUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +244,8 @@
 			files = (
 				BA8EF6401B65CD090093297D /* AppDelegate.m in Sources */,
 				BA8EF6431B65CD090093297D /* MasterViewController.m in Sources */,
+				BA8EF6661B65CD6C0093297D /* MBProgressHUD.m in Sources */,
+				BA8EF6691B65CE410093297D /* HUD.m in Sources */,
 				BA8EF63D1B65CD090093297D /* main.m in Sources */,
 				BA8EF6461B65CD090093297D /* DetailViewController.m in Sources */,
 			);

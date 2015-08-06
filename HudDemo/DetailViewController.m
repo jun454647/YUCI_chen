@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "HUD.h"
 
 @interface DetailViewController ()
 
@@ -36,6 +37,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    UIView *image = [[UIView alloc] initWithFrame:CGRectMake(10, 100, 200, 200)];
+    image.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:image];
+    
+    [HUD showHUD:self.view content:@"美女~" xOffset:0 yOffset:CGRectGetHeight(self.view.frame)/2-50];
 }
 
 - (void)didReceiveMemoryWarning {
